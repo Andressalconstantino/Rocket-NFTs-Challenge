@@ -239,3 +239,89 @@ body{
 .third-rkt{
   color: #ff5b50;
 }
+
+#fourth-section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#fourth-section h3{
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.fourth-line{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 30px 0;
+}
+.fourth-artist{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+  background-color: #252525;;
+  width: 15%;
+  justify-content: space-evenly;
+  padding: 15px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.fourth-artist img{
+  width:30%;
+}
+.fourth-artist div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.fourth-artist div b{
+  all: unset;
+  color: #ff5b50
+}
+
+.special{
+  background-color: #ff5b50;
+}
+
+.special div b{
+  color: #fff;
+}
+
+#fourth-see-all{
+  align-self: center;
+  width: 100%;
+  text-align: center;
+  margin: 40px 0 110px 0;
+  cursor: pointer;
+}
+#fourth-see-all img{
+  width: 20px;
+  margin-left: 40px;
+}
+
+footer{
+  background-color: #272727;
+  padding: 20px 0;
+}
+
+#footer-line1{
+  display: flex;
+  padding: 30px 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+#footer-line1 img{
+  width:20px;
+  padding: 15px;
+  background-color: #ff5b50;
+  cursor: pointer;
+}
