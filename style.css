@@ -24,6 +24,14 @@ body{
   background-color: #0e0e0e;
 }
 
+a{
+  cursor: pointer;
+}
+
+a:hover{
+  opacity: 0.7;
+}
+
 #first-section{
   background-image: url('media/background.png');
   display: flex;
@@ -210,7 +218,18 @@ body{
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin: 30px 0;
+  margin: 20px 0;
+  padding: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.third-content:hover{
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 
@@ -270,6 +289,12 @@ body{
   padding: 15px;
   border-radius: 2px;
   cursor: pointer;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+.fourth-artist:hover{
+  margin: 5px 0 15px 0;
+  transition: 0.3s;
 }
 .fourth-artist img{
   width:30%;
@@ -323,5 +348,99 @@ footer{
   width:20px;
   padding: 15px;
   background-color: #ff5b50;
+  cursor: pointer;
+}
+
+#footer-line2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+#footer-email{
+  width:30%;
+  border-right: 1px solid rgba(255,255,255,0.3);
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0 60px 50px;
+}
+
+#footer-email h3{
+  font-size: 24px;
+  font-weight:400;
+  margin-bottom: 30px;
+}
+
+#footer-links{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#footer-input{
+  display: inline-block;
+  width: 50%;
+  background-color: #0e0e0e;
+  border: none;
+  height: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.4);
+}
+#footer-send{
+  display: inline-block;
+  width: 25%;
+  height: 40px;
+  border: none;
+  border-radius: 0;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Montserrat;
+  cursor: pointer;
+}
+
+#footer-links ul{
+  list-style: none;
+}
+
+#footer-links li{
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+li:hover{
+  opacity: 0.7;
+}
+
+.footer-first{
+  font-weight: 600;
+  color: white;
+}
+
+#footer-line3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 50px 0 50px;
+}
+
+#footer-line3 a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#social-media-icons{
+  display: flex;
+  float: row;
+  justify-content: space-between;
+  width: 15%;
+}
+
+#social-media-icons img{
   cursor: pointer;
 }

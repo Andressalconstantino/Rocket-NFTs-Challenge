@@ -3,6 +3,7 @@
     <head>
         <title>NFTs</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
         <section id="first-section">
@@ -182,9 +183,51 @@
         <footer>
             <div id="footer-line1">
                 <h1>Rocket <span class="logo-title">NFTs</span></h1>
-                <img src="media/arrow-black.svg">
+                <img id="goUp" src="media/arrow-black.svg">
+            </div>
+            <div id="footer-line2">
+                <div id="footer-email">
+                    <h3>Fique por dentro de <br> <span class="logo-title">todas as novidades</span></h3>
+                    <span><input type="email" placeholder="nft@rocketseat.com.br" id="footer-input"><button id="footer-send">Enviar</button></span>
+                </div>
+                <div id="footer-links">
+                    <ul>
+                        <span class="footer-first">Empresa</span>
+                        <li>Sobre</li>
+                        <li>Serviços</li>
+                        <li>Time</li>
+                        <li>Carreira</li>
+                    </ul>
+                    <ul>
+                        <span class="footer-first">Empresa</span>
+                        <li>Sobre</li>
+                        <li>Serviços</li>
+                        <li>Time</li>
+                        <li>Carreira</li>
+                    </ul>
+                    <ul>
+                        <span class="footer-first">Empresa</span>
+                        <li>Sobre</li>
+                        <li>Serviços</li>
+                        <li>Time</li>
+                        <li>Carreira</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="footer-line3">
+                <a href="https://www.rocketseat.com.br/" target="_blank">www.rocketseat.com.br</a>
+                <div id="social-media-icons">
+                    <img src="media/instagram.svg"><img src="media/youtube.svg"><img src="media/twitter.svg"><img src="media/email.svg">
+                </div>
             </div>
         </footer>
-
+        <script>
+            $(document).ready(function (){
+                $('#goUp').click(()=>{
+                    $(window).scrollTop(0);
+                });
+            });
+        </script>
     </body>
+    
 </html>
